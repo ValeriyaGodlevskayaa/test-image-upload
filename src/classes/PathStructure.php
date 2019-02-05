@@ -1,8 +1,8 @@
 <?php
 
-namespace lera\images_uploader\classes;
+namespace lera\test_image_upload\classes;
 
-use lera\images_uploader\interfaces\PathStructureInterface;
+use lera\test_image_upload\interfaces\PathStructureInterface;
 
 class PathStructure implements PathStructureInterface
 {
@@ -39,6 +39,9 @@ class PathStructure implements PathStructureInterface
     {
         if($root === null && !isset($_SERVER['DOCUMENT_ROOT'])){
             throw new \Exception('Can not get root path!');
+        }
+        else{
+            $root = $root??$_SERVER['DOCUMENT_ROOT'];
         }
         if(!is_dir($root)){
             throw new \Exception('Wrong root path!');

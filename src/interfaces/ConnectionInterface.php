@@ -1,6 +1,6 @@
 <?php
 
-namespace lera\images_uploader\interfaces;
+namespace lera\test_image_upload\interfaces;
 
 interface ConnectionInterface
 {

@@ -1,10 +1,10 @@
 <?php
 
-namespace lera\images_uploader;
+namespace lera\test_image_upload;
 
-use lera\images_uploader\classes\ImageUrlUploader;
-use lera\images_uploader\classes\PathStructure;
-use lera\images_uploader\classes\CurlConnection;
+use lera\test_image_upload\classes\ImageUrlUploader;
+use lera\test_image_upload\classes\PathStructure;
+use lera\test_image_upload\classes\CurlConnection;
 
 class ImageUploader
 {

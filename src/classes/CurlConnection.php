@@ -1,8 +1,8 @@
 <?php
 
-namespace lera\images_uploader\classes;
+namespace lera\test_image_upload\classes;
 
-use lera\images_uploader\interfaces\ConnectionInterface;
+use lera\test_image_upload\interfaces\ConnectionInterface;
 
 class CurlConnection implements ConnectionInterface
 {
@@ -10,7 +10,7 @@ class CurlConnection implements ConnectionInterface
     public $errors = [];
     public $headers = [];
     protected $config = [
-        'allow_redirects' => false,
+        'allow_redirects' => true,
         'proxy' => [
             'url' => null,
             'port' => null

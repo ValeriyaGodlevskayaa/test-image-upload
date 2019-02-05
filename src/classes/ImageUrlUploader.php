@@ -1,9 +1,9 @@
 <?php
 
-namespace lera\images_uploader\classes;
+namespace lera\test_image_upload\classes;
 
-use lera\images_uploader\interfaces\ConnectionInterface;
-use lera\images_uploader\interfaces\PathStructureInterface;
+use lera\test_image_upload\interfaces\ConnectionInterface;
+use lera\test_image_upload\interfaces\PathStructureInterface;
 
 class ImageUrlUploader
 {
